@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunshine Farm Philippines</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="images/logo.jpg">
+ 
+  <!-- CSS Styles -->
+  <style>
+
+    body {
+      background-color: (0, 255, 0, 0.8);
+    }
+
+    .header {
+      background: url('images/DSC05352.jpg') no-repeat center center/cover;
+      height: 100vh;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .explore-btn {
+      background-color: rgb(255, 196, 12);
+      transition: 0.3s ease;
+      border: none;
+    }
+
+    .explore-btn:hover {
+      background-color: rgb(251, 236, 93);
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card-body {
+      flex: 1;
+      display: flex;
+      text-align: justify;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .cards-section {
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .question {
+      color: black;
+      text-align: center;
+    }
+
+    .gallery-container {
+      width: 100%;
+      padding: 20px;
+      margin: 100px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      flex: 0 1 30%;
+      max-width: 30%;
+      margin: 5px;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+      transition: transform 1s ease;
+      overflow: hidden;
+    }
+
+    .box img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .box:hover {
+      transform: scale(1.1);
+      z-index: 2;
+    }
+
+    .about-us {
+      justify-content: center;
+      text-align: justify;
+      margin: 5px;
+      padding: 20px;
+      background-color: rgb(252, 255, 164);
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- For navigation bar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(255,196,12);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i>Planting Seeds of Hope and Happiness</a></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- For the Main Page section -->
+  <div class="header position-relative text-white">
+    <div class="overlay">
+    </div>
+    <div class="header position-relative text-start pt-5 mt-0 mb-n5">
+      <div class="row align-items-center" style="height: 80vh;">
+        <div class="col-md-6">
+          <h1 class="display-2 fw-bold px-4">Sunshine Farm Philippines</h1>
+          <p class="lead px-4">
+            Barangay Lalig, Tiaong, Quezon Province
+          </p>
+          <button class="btn btn-primary rounded-pill mt-1 m-4 px-4 py-2 explore-btn"><b>Explore</b></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- For the Why Visit question -->
+  <div class="visit mt-5 mb-3">
+    <h2 class="question"><b>Why Visit Sunshine Farm Philippines?</b></h2>
+  </div>
+
+  <!-- For the cards section -->
+  <div class="cards-section mt-n5 mb-2">
+    <div class="row justify-content-center">
+
+      <div class="col-md-3 mb-2">
+        <div class="card shadow-sm border-0">
+          <img src="images/pwdworkers.jpg" class="workers-img" alt="PWD Workers">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Empowers PWDs Through Hope</h5>
+            <p class="text-justify text-muted mb-1">Sunshine Farm is more than just a farm; it is an opportunity to
+              support a meaningful cause. Dedicated to employing Persons with Disabilities (PWDs), the farm provides
+              sustainable livelihoods and empowers individuals to overcome societal stigmas.Sunshine Farm fosters an
+              inclusive environment, offering equal opportunities and uplifting spirits, making every visit a rewarding
+              and impactful experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-2">
+        <div class="card shadow-sm border-0">
+          <img src="images/sunflower.jpg" class="sunflowers-img" alt="haven">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">A Haven for Sunflower Lovers</h5>
+            <p class="text-justify text-muted mb-1">Sunshine Farm is a perfect place for sunflower lovers and anyone who
+              enjoys nature. The owner, a true sunflower fan, has filled the farm with beautiful blooms and
+              sunflower-inspired designs. Even if you’re not a sunflower lover, you can still appreciate the lovely
+              scenery and peaceful atmosphere. Sunshine Farm offers a delightful experience for everyone. Sunshine Farm
+              is for anyone who loves nature.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-2">
+        <div class="card shadow-sm border-0">
+          <img src="images/sdg.jpg" class="card-img-top" alt="Ijen Crater">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Supports United Nations Sustainable Development Goals</h5>
+            <p class="text-muted mb-1">Sunshine Farm is dedicated to the UN Sustainable Development Goals (SDGs) 5, 8,
+              10, and 15. The farm creates job opportunities for individuals with disabilities of all genders, promoting
+              equality and inclusivity. Additionally, by cultivating flowers and enhancing the environment, Sunshine
+              Farm plays a vital role in promoting biodiversity and preserving local ecosystems. It helps us to have a
+              sustainable future.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-2">
+        <div class="card shadow-sm border-0">
+          <img src="images/pasalubong.jpg" class="card-img-top" alt="Ijen Crater">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Embraces Filipino Tradition of Pasalubong</h5>
+            <p class="text-justify text-muted mb-1">Sunshine Farm embraces the Filipino tradition of pasalubong,
+              offering a variety of affordable, handcrafted souvenirs made by individuals with disabilities (PWDs) in
+              our Souvenir Shop. You can also find a selection of plants and our exclusive "Tita Sunshine Products".
+              Every purchase supports our mission to provide sustainable employment for more PWDs, making your gifts
+              meaningful and impactful.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- For the Gallery section -->
+      <div id="gallery" class="container mt-5 mb-1" style="text-align: center">
+        <h2 class="pictures"><b>Gallery</b></h2>
+      </div>
+
+      <div class="container-fluid">
+        <div id="carouselgallery" class="carousel slide mt-4 mb-5" data-bs-ride="carousel" style="text-align: center;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/DSC04733.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/DSC04808.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/DSC04899.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/DSC05172.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic4">
+            </div>
+            <div class="carousel-item">
+              <img src="images/DSC05406.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic5">
+            </div>
+            <div class="carousel-item">
+              <img src="images/DSC05409.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic6">
+            </div>
+            <div class="carousel-item">
+              <img src="images/DSC05445.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic7">
+            </div>
+            <div class="carousel-item">
+              <img src="images/DSC05491.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic8">
+            </div>
+            <div class="carousel-item">
+              <img src="images/farm.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic9">
+            </div>
+            <div class="carousel-item">
+              <img src="images/flowers.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic10">
+            </div>
+            <div class="carousel-item">
+              <img src="images/flowers1.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic11">
+            </div>
+            <div class="carousel-item">
+              <img src="images/flowers2.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic12">
+            </div>
+            <div class="carousel-item">
+              <img src="images/cars.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic13">
+            </div>
+            <div class="carousel-item">
+              <img src="images/house.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic14">
+            </div>
+            <div class="carousel-item">
+              <img src="images/house1.jpg" class="d-block mx-auto" style="width: 80%;" alt="pic15">
+            </div> 
+          </div>
+          <button class="carousel-control-prev" style="background-color: rgb(192,192,192);" type="button"
+            data-bs-target="#carouselgallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" style="background-color: rgb(192,192,192);" type="button"
+            data-bs-target="#carouselgallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- For the Abous Us section -->
+      <div id="about" class="container-fluid">
+        <div class="about-us mb-5" style="text-align: justify; background-color:  rgb(255,253,208);">
+          <div class="row">
+            <div class="col-md-4 p-3">
+              <img src="images/titasunshine.jpg" class="img-fluid rounded-start" alt="owner">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-0">
+                <h2 class="card-title m-0 p-n5"><br><b>About Us</br></b></h2>
+                <p class="card-text me-5" style="font-size: 18px;">
+                  <br>Rhodora Palomar-Fresnedi is passionate about two things: helping people with disabilities (PWDs)
+                  and growing flowers. In the past, she has helped PWDs find jobs, but she wanted to do more. With many
+                  ideas in mind, she wasn't sure where to begin until she met Mike Caballes, a sunflower expert. This
+                  meeting sparked an idea—why not start a sunflower farm that PWDs can manage?
+
+                  <br><br>Two weeks after meeting Mike, Rhodora began planting sunflower seeds on a vacant lot in Lalig,
+                  Quezon. She hired two PWDs to help, and in just 45 days, the flowers bloomed beautifully, attracting
+                  butterflies, bees, and even fireflies at night. The farm quickly gained attention, with people
+                  stopping by to buy sunflowers. Rhodora's first harvest was a success, and she received more orders
+                  than she could handle.
+
+                  <br><br>Now, Rhodora is focused on making the farm sustainable, allowing her to continue providing
+                  jobs for PWDs. She has expanded her team to eight PWD employees and is preparing for an even larger
+                  farm. Her goal is clear: she’s not just selling sunflowers; she’s creating jobs for PWDs. Sunshine
+                  Farm Philippines is all about planting hope, where hope for PWDs means having a job and a future.
+                  </br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For the FAQs section -->
+      <div id="faqs" class="container-fluid section">
+        <div class="faqs-title" style="text-align: center;">
+          <h2 class="title mt-5" ><b>Frequently Asked Questions (FAQs)</b></h2>
+        </div>
+        <img src="images/map.png" class="card-img-top" alt="map" style="width: 50%; margin: 0 auto; display: block;">
+        <div class="card-body p-3">
+          <h5 class="card-title">Sunshine Farm Philippines</h5>
+          <a href="https://tinyurl.com/bdesdeyj" class="card-link">Maharlika Highway Beside Green Gate Orchid Farm 4325
+            Tiaong Calabarzon</a>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">0917 680 0214</li>
+          <li class="list-group-item">Opens at 8am-5pm daily</li>
+          <li class="list-group-item">Entrance Fee of P100 - to help in the general upkeep of the farm and continuous
+            employment of PWDs. Children below 10 years old may enter for free as long as they are accompanied by an
+            adult.</li>
+        </ul>
+        <div class="card-body">
+          <a href="https://sunshinefarmph.org" class="card-link">sunshinefarmph.org</a>
+          <a href="https://www.facebook.com/SunshineFarmPH" class="card-link">www.facebook.com/SunshineFarmPH</a>
+        </div>
+      </div>
+
+      <!-- For the footer -->
+      <footer class="container-fluid section text-black text-center p-2 mt-5 mb-0"
+        style="background-color: rgb(255,196,12); margin: 5px;">
+        <p>&copy; 2024 For academic purposes only. All Rights Reserved.</p>
+      </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
