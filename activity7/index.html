@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Naruto</title>
+    <link rel="icon" href="images/weblogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .narutoButton {
+            color: inherit;
+        }
+
+        .narutoButton:hover {
+            cursor: pointer;
+            box-shadow: 1px 1px 5px 1px;
+            background: #fa9427;
+        }
+
+        .header {
+            position: relative;
+            background: url('images/bgnaruto.jpeg') no-repeat center center/cover;
+            height: 90vh;
+            animation: zoomOut 2s ease-out;
+            overflow: hidden;
+            margin-bottom: 0px;
+        }
+
+        .mode-icon {
+            width: 30px;
+            height: 30px;
+            border: 0px;
+            transition: transform 0.3s ease;
+        }
+
+        .btnMode {
+            border: 0px;
+            background-color: transparent;
+        }
+
+        .carousel {
+            width: 20%;
+            justify-content: center;
+        }
+
+        .btnMode:hover {
+            transform: scale(1.2);
+
+        }
+
+        .navbar .container-fluid {
+            flex-wrap: nowrap;
+        }
+
+        .transparent-card {
+            background-color: transparent;
+            border: none;
+        }
+
+        .card-text {
+            text-align: justify;
+        }
+        .description {
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+
+        .description:hover {
+            transform: scale(1.1);
+        }
+
+        .pagetop img:hover {
+            transform: scale(1.1);
+        }
+
+        .narutonav:hover {
+            transform: scale(1.2);
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            position: fixed;
+        }
+
+        .social-button img {
+            width: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-button:hover img {
+            transform: scale(1.1);
+        }
+   
+        .btn:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+
+        @font-face {
+            font-family: narutoFont;
+            src: url(fonts/njnaruto.ttf);
+        }
+
+        .naruto {
+            font-family: narutoFont;
+        }
+
+        @keyframes zoomOut {
+            0% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body id="body" data-bs-theme="light">
+    <nav class="navbar mb-0 navbar-expand-lg bg-body-tertiary shadow fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="index.html" style="text-decoration: none" class="d-flex align-items-center">
+                <img src="images/navlogo.png" class="narutonav" style="max-width: 8%;" alt="narutonav">
+            </a>
+            <div class="d-flex align-items-center">
+                <button class="btnMode" onclick="changeMode()">
+                    <img id="light-mode-icon" class="mode-icon"  src="images/light-mode.png" alt="light-mode-icon">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header position-relative">
+        <div class="overlay">
+        </div>
+    </div>
+
+    <div class="container-main p-1" style="background-color: #fa9427;">
+        <div class="container">
+            <div class="row mt-3 mb-2">
+                <div class="col">
+                    <h1 class="naruto text-black">
+                        Naruto Universe
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card shadow p-2 rounded-5">
+                        <div class="row">
+                            <div class="col">
+                                <a href="characters.html" style="color: inherit;">
+                                    <div class="cardButton p-2 text-center rounded-5 narutoButton">
+                                        <div class="h3">Characters</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="search.html" style="color: inherit;">
+                                    <div class="cardButton p-2 text-center rounded-5 narutoButton">
+                                        <div class="h3">Search</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description mt-5 mb-3" style="width: 100%;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/narutouzumaki.jpg" class="img-fluid rounded-start p-0" alt="narutocard">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body pt-2 pe-3">
+                            <h2 class="card-title" style="font-family: Impact">Naruto (ナルト)</h2>
+                            <p class="card-text justify-text">Explore the exciting world of Naruto, a famous manga and
+                                anime created by Masashi Kishimoto. Naruto Uzumaki is a young ninja with a powerful
+                                force hidden inside
+                                him,va secret that has made him feel isolated from his village. His biggest dream is to
+                                become the Hokage, the strongest ninja and village leader, but first, he needs to pass
+                                his
+                                exams! Despite struggling with basic ninja skills, Naruto’s determination to succeed is
+                                his
+                                greatest strength. Joined by the talented Sasuke, smart Sakura, and their leader
+                                Kakashi, Naruto sets off on his journey to become Hokage. Along the way, he faces
+                                outside threats
+                                to the Hidden Leaf Village and realizes he must grow much stronger to achieve his dream
+                                and
+                                protect his friends. Naruto is loved for its deep characters, complex
+                                storylines, and thrilling fights. The Naruto universe goes beyond the main series, with
+                                spin-offs like "Boruto: Naruto Next Generations," along with many video games, movies,
+                                and books.
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Created by Masashi Kishimoto</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid position-relative text-end">
+                <img src="images/frog.png" alt="frog" class="frog">
+            </div>
+
+            <div class="row container-fluid p-2" style="background-color: rgba(255, 255, 255, 0.1);">
+                <div class="col-md-6">
+                    <div class="transparent-card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                    <img src="images/comics.jpg" class="img-fluid rounded-start p-0" alt="comics">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body justify-text p-5">
+                                    <a href="https://naruto-official.com/en/comics" style="color:inherit">
+                                    <h2 class="card-title" style="font-family: Impact;">MANGA</h2>
+                                    </a>
+                                    <p class="card-text">Naruto is a Japanese manga series by Masashi Kishimoto,
+                                        following Naruto Uzumaki, a young ninja aspiring to become the Hokage, the
+                                        strongest ninja in his village. Throughout his journey, he faces challenges,
+                                        grows stronger, and forms bonds with friends and rivals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="transparent-card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                    <img src="images/novel.jpg" class="img-fluid rounded-start p-0" alt="novel">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body justify-text p-5">
+                                    <a href="https://naruto-official.com/en/books"  style="color:inherit">
+                                    <h2 class="card-title" style="font-family: Impact;">NOVEL</h2>
+                                    </a>
+                                    <p class="card-text">The Naruto novels expand on the world, characters, and lore of
+                                        the Naruto series, exploring untold stories, side characters,
+                                        and post-series events. They delve into character backstories, provide insights
+                                        into the Naruto universe, and bridge the gap between the original series and its
+                                        sequel, Boruto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="transparent-card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                    <img src="images/game.png" class="img-fluid rounded-start p-0" alt="game">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body justify-text p-5">
+                                    <a href="https://naruto-official.com/en/game" style="color:inherit">
+                                    <h2 class="card-title" style="font-family: Impact;">GAME</h2>
+                                    </a>
+                                    <p class="card-text">Naruto Games are a diverse collection of titles based on the
+                                        popular anime and manga series. They span various genres, focusing on
+                                        role-playing and action-adventure gameplay. Players can engage in
+                                        battles using various characters with unique jutsu and abilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="transparent-card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                    <img src="images/anime.jpg" class="img-fluid rounded-start p-0" alt="novel">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body justify-text p-5">
+                                    <a href="https://naruto-official.com/en/anime"  style="color:inherit">
+                                    <h2 class="card-title" style="font-family: Impact;">ANIME</h2>
+                                    </a>
+                                    <p class="card-text">Naruto also has anime series based on Masashi Kishimoto's
+                                        manga, originally airing from 2002 to 2017. Known for its vibrant animation and
+                                        well-choreographed battles, Naruto has left a lasting cultural impact, inspiring
+                                        numerous spin-offs, movies, and games.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-end m-3">
+            <img src="images/sticker.png" class="img rounded-start" alt="sticker">
+        </div>
+
+
+        <div class="container-fluid position-relative p-2 m-0"
+            style="min-height: 65vh; background: url('images/header_.jpg') no-repeat center center/cover;">
+            <div id="carouselExampleIndicators" class="carousel mt-4 mx-auto" style="width: 50%;" data-bs-ride="carousel">
+                <h1 class="gallery text-center" style="font-family: narutoFont;">Gallery</h1>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                        aria-label="Slide 10"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/g1.jpg" class="d-block w-100" alt="g1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g2.jpg" class="d-block w-100" alt="g2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g3.jpg" class="d-block w-100" alt="g3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g4.jpg" class="d-block w-100" alt="g4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g5.jpg" class="d-block w-100" alt="g5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g6.jpg" class="d-block w-100" alt="g6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g7.jpg" class="d-block w-100" alt="g7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g8.jpg" class="d-block w-100" alt="g8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g9.jpg" class="d-block w-100" alt="g9">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/g10.jpg" class="d-block w-100" alt="g10">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="social-buttons text-start fixed-bottom m-2">
+            <a href="https://x.com/NARUTO_info_en" target="_blank" class="social-button" style="text-decoration: none;">
+                <img src="images/x_icon.png" alt="x" class="x-icon m-2" style="width:25px">
+            </a>
+            <a href="https://www.facebook.com/narutoofficialsns" target="_blank" class="social-button"
+                style="text-decoration: none;">
+                <img src="images/facebook_icon.png" alt="x" class="fb-icon m-2" style="width:25px">
+            </a>
+        </div>
+
+        <div class="container">
+            <img src="images/trio.png" class="img rounded-start" alt="sticker">
+        </div>
+        
+        <div class="container-fluid mx-auto p-5" style="background: url('images/bg5.jpg') no-repeat center center/cover;">
+            <div class="card-header text-center text-white" style="font-family: Impact;">
+                <h4>Check here for the latest news!</h4>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <button class="btn btn-light rounded-5 d-flex align-items-center p-3 px-3" style="background-color:white;">
+                    <a href="https://x.com/NARUTO_info_en" style="text-decoration: none; color:inherit">
+                    <img src="images/logonav.png" alt="x" class="imglogo" style="width:25px; height:25px; border-radius: 50%;">
+                    <span>Follow the official Naruto and Boruto X</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="pagetop text-end fixed-bottom m-0">
+            <a href="#" onclick="scrollToTop()">
+                <img src="images/top.png" class="imgpage rounded-start m-3" alt="pagetop">
+            </a>
+        </div>
+
+        <footer class="container-fluid section text-white text-center p-3 mt-5 ms-0"
+        style="background-color: black; margin: 5px;">
+        <img src="images/narutologo.png" class="btmlogo mb-2" style="width: 10%" alt="btmlogo">
+        <p>&copy; 2024 For academic purposes only. All Rights Reserved.</p>
+      </footer>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+
+        <script>
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+
+            var colorMode = "light";
+
+            function changeMode() {
+                var bodyElement = document.getElementById("body");
+                var iconElement = document.getElementById("light-mode-icon");
+
+                colorMode = colorMode === "dark" ? "light" : "dark";
+                bodyElement.setAttribute("data-bs-theme", colorMode);
+
+                if (colorMode === "dark") {
+                    iconElement.src = "images/dark-mode.png";
+                    iconElement.alt = "dark-mode-icon";
+                } else {
+                    iconElement.src = "images/light-mode.png";
+                    iconElement.alt = "light-mode-icon";
+                }
+            }
+        </script>
+
+</body>
+
+</html>
