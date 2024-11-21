@@ -8,7 +8,14 @@
     <link rel="icon" href="images/weblogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS styles -->
     <style>
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
         .narutoButton {
             color: inherit;
         }
@@ -62,6 +69,7 @@
         .card-text {
             text-align: justify;
         }
+
         .description {
             border: 3px solid black;
             border-radius: 5px;
@@ -86,15 +94,15 @@
             position: fixed;
         }
 
-        .social-button img {
+        .social-buttons img {
             width: 40px;
             transition: transform 0.3s ease;
         }
 
-        .social-button:hover img {
+        .social-buttons:hover img {
             transform: scale(1.1);
         }
-   
+
         .btn:hover {
             transform: scale(1.1);
             opacity: 0.8;
@@ -125,15 +133,21 @@
 </head>
 
 <body id="body" data-bs-theme="light">
-    <nav class="navbar mb-0 navbar-expand-lg bg-body-tertiary shadow fixed-top">
+    <!-- For the Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow z-1 fixed-top">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a href="activity7.html" style="text-decoration: none" class="d-flex align-items-center">
-                <img src="images/navlogo.png" class="narutonav" style="max-width: 8%;" alt="narutonav">
+            <a href="index.html" style="text-decoration: none; outline: none;" class="d-flex align-items-center">
+                <img src="images/navlogo.png" class="narutonav" style="max-width: 5vh;" alt="narutonav">
             </a>
             <div class="d-flex align-items-center">
                 <button class="btnMode" onclick="changeMode()">
-                    <img id="light-mode-icon" class="mode-icon"  src="images/light-mode.png" alt="light-mode-icon">
+                    <img id="light-mode-icon" class="mode-icon" src="images/light-mode.png" alt="light-mode-icon">
                 </button>
+                <a href="../index.html" style="text-decoration: none;">
+                    <button class="btn rounded-5 text-black text-center ms-2" style="background-color: #fa9427; width: 15vh;">
+                        Home Page
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
@@ -145,7 +159,7 @@
 
     <div class="container-main p-1" style="background-color: #fa9427;">
         <div class="container">
-            <div class="row mt-3 mb-2">
+            <div class="row g-0 mt-3 mb-2">
                 <div class="col">
                     <h1 class="naruto text-black">
                         Naruto Universe
@@ -153,10 +167,10 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row g-0">
                 <div class="col">
                     <div class="card shadow p-2 rounded-5">
-                        <div class="row">
+                        <div class="row g-0">
                             <div class="col">
                                 <a href="characters.html" style="color: inherit;">
                                     <div class="cardButton p-2 text-center rounded-5 narutoButton">
@@ -164,6 +178,8 @@
                                     </div>
                                 </a>
                             </div>
+
+                            <!-- Search Function -->
                             <div class="col">
                                 <a href="search.html" style="color: inherit;">
                                     <div class="cardButton p-2 text-center rounded-5 narutoButton">
@@ -176,8 +192,9 @@
                 </div>
             </div>
 
+            <!-- Main Contents -->
             <div class="description mt-5 mb-3" style="width: 100%;">
-                <div class="row">
+                <div class="row g-0">
                     <div class="col-md-4">
                         <img src="images/narutouzumaki.jpg" class="img-fluid rounded-start p-0" alt="narutocard">
                     </div>
@@ -213,17 +230,17 @@
                 <img src="images/frog.png" alt="frog" class="frog">
             </div>
 
-            <div class="row container-fluid p-2" style="background-color: rgba(255, 255, 255, 0.1);">
+            <div class="row g-0 container-fluid p-2" style="background-color: rgba(255, 255, 255, 0.1);">
                 <div class="col-md-6">
                     <div class="transparent-card" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                    <img src="images/comics.jpg" class="img-fluid rounded-start p-0" alt="comics">
+                                <img src="images/comics.jpg" class="img-fluid rounded-start p-0" alt="comics">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body justify-text p-5">
                                     <a href="https://naruto-official.com/en/comics" style="color:inherit">
-                                    <h2 class="card-title" style="font-family: Impact;">MANGA</h2>
+                                        <h2 class="card-title" style="font-family: Impact;">MANGA</h2>
                                     </a>
                                     <p class="card-text">Naruto is a Japanese manga series by Masashi Kishimoto,
                                         following Naruto Uzumaki, a young ninja aspiring to become the Hokage, the
@@ -239,12 +256,12 @@
                     <div class="transparent-card" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                    <img src="images/novel.jpg" class="img-fluid rounded-start p-0" alt="novel">
+                                <img src="images/novel.jpg" class="img-fluid rounded-start p-0" alt="novel">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body justify-text p-5">
-                                    <a href="https://naruto-official.com/en/books"  style="color:inherit">
-                                    <h2 class="card-title" style="font-family: Impact;">NOVEL</h2>
+                                    <a href="https://naruto-official.com/en/books" style="color:inherit">
+                                        <h2 class="card-title" style="font-family: Impact;">NOVEL</h2>
                                     </a>
                                     <p class="card-text">The Naruto novels expand on the world, characters, and lore of
                                         the Naruto series, exploring untold stories, side characters,
@@ -262,12 +279,12 @@
                     <div class="transparent-card" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                    <img src="images/game.png" class="img-fluid rounded-start p-0" alt="game">
+                                <img src="images/game.png" class="img-fluid rounded-start p-0" alt="game">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body justify-text p-5">
                                     <a href="https://naruto-official.com/en/game" style="color:inherit">
-                                    <h2 class="card-title" style="font-family: Impact;">GAME</h2>
+                                        <h2 class="card-title" style="font-family: Impact;">GAME</h2>
                                     </a>
                                     <p class="card-text">Naruto Games are a diverse collection of titles based on the
                                         popular anime and manga series. They span various genres, focusing on
@@ -284,12 +301,12 @@
                     <div class="transparent-card" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                    <img src="images/anime.jpg" class="img-fluid rounded-start p-0" alt="novel">
+                                <img src="images/anime.jpg" class="img-fluid rounded-start p-0" alt="novel">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body justify-text p-5">
-                                    <a href="https://naruto-official.com/en/anime"  style="color:inherit">
-                                    <h2 class="card-title" style="font-family: Impact;">ANIME</h2>
+                                    <a href="https://naruto-official.com/en/anime" style="color:inherit">
+                                        <h2 class="card-title" style="font-family: Impact;">ANIME</h2>
                                     </a>
                                     <p class="card-text">Naruto also has anime series based on Masashi Kishimoto's
                                         manga, originally airing from 2002 to 2017. Known for its vibrant animation and
@@ -308,10 +325,11 @@
             <img src="images/sticker.png" class="img rounded-start" alt="sticker">
         </div>
 
-
-        <div class="container-fluid position-relative p-2 m-0"
+        <!-- Gallery -->
+        <div class="container-fluid position-relative p-2 m-0 g-0"
             style="min-height: 65vh; background: url('images/header_.jpg') no-repeat center center/cover;">
-            <div id="carouselExampleIndicators" class="carousel mt-4 mx-auto" style="width: 50%;" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel mt-4 mx-auto" style="width: 50%;"
+                data-bs-ride="carousel">
                 <h1 class="gallery text-center" style="font-family: narutoFont;">Gallery</h1>
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -380,52 +398,59 @@
             </div>
         </div>
 
-        <div class="social-buttons text-start fixed-bottom m-2">
-            <a href="https://x.com/NARUTO_info_en" target="_blank" class="social-button" style="text-decoration: none;">
-                <img src="images/x_icon.png" alt="x" class="x-icon m-2" style="width:25px">
-            </a>
-            <a href="https://www.facebook.com/narutoofficialsns" target="_blank" class="social-button"
-                style="text-decoration: none;">
-                <img src="images/facebook_icon.png" alt="x" class="fb-icon m-2" style="width:25px">
-            </a>
-        </div>
 
         <div class="container">
             <img src="images/trio.png" class="img rounded-start" alt="sticker">
         </div>
-        
-        <div class="container-fluid mx-auto p-5" style="background: url('images/bg5.jpg') no-repeat center center/cover;">
+
+        <div class="container-fluid mx-auto p-5"
+            style="background: url('images/bg5.jpg') no-repeat center center/cover;">
             <div class="card-header text-center text-white" style="font-family: Impact;">
                 <h4>Check here for the latest news!</h4>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <button class="btn btn-light rounded-5 d-flex align-items-center p-3 px-3" style="background-color:white;">
+                <button class="btn btn-light rounded-5 d-flex align-items-center p-3 px-3"
+                    style="background-color:white;">
                     <a href="https://x.com/NARUTO_info_en" style="text-decoration: none; color:inherit">
-                    <img src="images/logonav.png" alt="x" class="imglogo" style="width:25px; height:25px; border-radius: 50%;">
-                    <span>Follow the official Naruto and Boruto X</span>
+                        <img src="images/logonav.png" alt="x" class="imglogo"
+                            style="width:25px; height:25px; border-radius: 50%;">
+                        <span>Follow the official Naruto and Boruto X</span>
                     </a>
                 </button>
             </div>
         </div>
 
+        <!-- Page top -->
         <div class="pagetop text-end fixed-bottom m-0">
             <a href="#" onclick="scrollToTop()">
                 <img src="images/top.png" class="imgpage rounded-start m-3" alt="pagetop">
             </a>
         </div>
 
+        <!-- Socmed Buttons -->
+        <div class="social-buttons text-start fixed-bottom m-2">
+            <a href="https://x.com/NARUTO_info_en">
+                <img src="images/x_icon.png" alt="x" class="social-button m-2" style="width:25px;">
+            </a>
+            <a href="https://www.facebook.com/narutoofficialsns" class="" style="text-decoration: none;">
+                <img src="images/facebook_icon.png" alt="facebook" class="social-button m-2" style="width:25px;">
+            </a>
+        </div>
+
+        <!-- Footer -->
         <footer class="container-fluid section text-white text-center p-3 mt-5 ms-0"
-        style="background-color: black; margin: 5px;">
-        <img src="images/narutologo.png" class="btmlogo mb-2" style="width: 10%" alt="btmlogo">
-        <p>&copy; 2024 For academic purposes only. All Rights Reserved.</p>
-      </footer>
-        
+            style="background-color: black; margin: 5px;">
+            <img src="images/narutologo.png" class="btmlogo mb-2" style="width: 10%" alt="btmlogo">
+            <p>&copy; 2024 For academic purposes only. All Rights Reserved.</p>
+        </footer>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
             </script>
-
         <script>
+
+            // For Page Top function
 
             function scrollToTop() {
                 window.scrollTo({
@@ -433,8 +458,6 @@
                     behavior: 'smooth'
                 });
             }
-
-
             var colorMode = "light";
 
             function changeMode() {
