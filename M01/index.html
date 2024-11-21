@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tangled</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="animations.css"> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link rel="icon" href="images/l2.png">
+
+  <!-- CSS Styles -->
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+    }
+    .body {
+      background-color: #f5e6d1;
+    }
+
+    .lantern-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .lantern {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .lantern img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 20;
+      animation: fadeIn 5s ease-out forwards;
+
+    }
+
+    @font-face {
+      font-family: tfont;
+      src: url(images/fonts/tangled-font.otf);
+
+    }
+
+    .card-body {
+      text-align: justify;
+
+    }
+
+    .pascal {
+      position: relative;
+      height: 10vw;
+
+    }
+
+    .pascal-img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 10vw;
+      height: auto;
+    }
+
+    .maximus {
+      position: relative;
+      height: 10vw;
+
+    }
+
+    .maximus img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30vw;
+      height: auto;
+    }
+
+    .svg-curve .shape-fill {
+      fill: #ecd570;
+    }
+
+
+    .svg-bad .shape-fill {
+      fill: #091443;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="button ms-3">
+    <a href="index.html" style="text-decoration: none;">
+      <button class="btn rounded-5 text-black fixed-top m-2" style="background-color: #ffbf00; width: 15vh;" >
+        Home Page
+      </button>
+      </a>
+    </div>
+
+  <!-- For the floating lanterns -->
+  <div class="lantern-container">
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+    <div class="lantern">
+      <img src="images/tangled.png" alt="Tangled">
+    </div>
+  </div>
+
+  <div class="logo">
+    <img src="images/logo.png">
+  </div>
+
+  <!-- Embedded Video -->
+  <div class="container-fluid p-0" style="position: relative; width: 100%; overflow: hidden;">
+    <div class="row">
+      <div class="col" style="height: 100vh;">
+        <iframe style="pointer-events: none; margin-left: 50%; transform: translateX(-50%);" width="4000px"
+          height="100%"
+          src="https://www.youtube.com/embed/fKPK6c0mKE0?si=xm7evkpzdFAetXap&autoplay=1&mute=1&controls=0&loop=1"
+          title="Tangled" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="svg">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"></path>
+    </svg>
+  </div>
+
+  <!-- For the main contents -->
+  <div class="container-fluid mb-3 p-0 m-0;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/rapunzel.png" class="img-fluid p-0 wow animate__animated animate__fadeInUp" style="width: 40vh" alt="rapunzel">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body text-justify ms-5 me-5 mt-5">
+          <h5 class="meet wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size: 6vh; color: #c489cc;">Meet Rapunzel!</h5>
+          <p class="card-text wow animate__animated animate__fadeInUp">Rapunzel is a bright, curious, and adventurous young woman with a bright and optimistic
+            personality
+            that lights up any room. She has a heart full of kindness and compassion, always ready to help others with a
+            smile. Known for her creativity and resourcefulness, Rapunzel loves to explore new ideas and
+            experiences, always eager to learn and grow. She has a strong sense of independence and courage, facing
+            challenges with a positive attitude and a determination to make the most of every situation. Her
+            free-spirited nature is paired with a deep love for the simple joys in life, like music, art, and the beauty
+            of the world around her. <br><br>
+            <span style="font-family: tfont; font-size: 4vh; color: #a6d5ae;">And oh!</span><span
+              style="font-family: tfont; font-size: 4vh; color: #8fbc8e;"> How can we forget...</span>
+            <span class="wow animate__animated animate__fadeInUp "style="font-family: tfont; font-size: 4vh; color: #64a466;">Pascal!</span>
+          <p class="wow animate__animated animate__fadeInUp" style="font-family: poppins;">Pascal is Rapunzel’s loyal chameleon companion. He’s playful, quirky, and always by her side. With his
+            ability to change colors, Pascal adds a bit of fun and unpredictability to their adventures. Though small,
+            he’s a big source of support and joy for Rapunzel, offering comfort and companionship wherever they go.
+          </p>
+          <div class="pascal">
+            <img src="images/pascal.png" alt="Pascal" class="pascal-img wow animate__animated animate__fadeInUp">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5 mb-3">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body text-justify ms-5 me-5 mt-5">
+          <h5 class="card-title wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size: 6vh; color: #000;">Rapunzel, Let down your hair!
+          </h5><br>
+          <p class="card-text wow animate__animated animate__fadeInUp">But despite her positivity and adventurous spirit, Rapunzel’s freedom is restricted by
+            her believed mother. Everyday, Mother Gothel tells Rapunzel to "let down your hair" because it's the only
+            way to reach
+            her at the top of the tower. The tower is tall and inaccessible, and Rapunzel's long magical hair serves
+            as a "ladder" that allows Mother Gothel to climb up and visit her.
+            Rapunzel has been confined to a tower her entire life by the woman she believes to be her mother. This
+            woman claims to be protecting Rapunzel from the outside world, keeping her
+            isolated. What Rapunzel doesn’t know is that she is not an ordinary girl—she is the long-lost princess of
+            the kingdom, stolen from her royal family as an infant. Mother Gothel, driven by selfish motives, kidnapped
+            Rapunzel to exploit the magical properties of her golden hair to maintain her youth and beauty. While
+            Rapunzel’s heart is full of warmth and hope, it’s through her curiosity and determination
+            that she begins to question the truth behind her confinement, realizing that true happiness and freedom lie
+            beyond the walls that hold her back.</p> <br>
+        </div>
+        <div class="mother ms-5">
+          <img src="images/mother.png" alt="mother" class="mother wow animate__animated animate__fadeInUp" style="width: 15vw;">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="images/tower.png" class="img-fluid wow animate__animated animate__fadeInUp" alt="mother">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5 p-0 m-0">
+    <div class="row g-0">
+      <div class="col-md-4 p-0">
+        <img src="images/thief.jpg" class="img-fluid p-5 wow animate__animated animate__fadeInUp" style="width: 100%;" alt="rapunzel">
+      </div>
+      <div class="col-md-8 p-0 mb-0">
+        <div class="card-body text-justify ms-5 me-5 mt-5 mb-0">
+          <h5 class="meet wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size:6vh; color: #357b8a; margin-bottom: 15px;">And just in
+            time, Flynn showed up</h5>
+          <p class="card-text wow animate__animated animate__fadeInUp">Enter Flynn Rider—a charming, quick-witted thief on the run. Flynn unexpectedly stumbles
+            upon Rapunzel’s tower while seeking refuge, turning her world upside down. With his captivating charm and
+            adventurous spirit, Flynn becomes the perfect companion for Rapunzel’s journey of self-discovery and
+            freedom. Together, they set out on an exciting and transformative adventure, uncovering truths, forging
+            bonds, and embracing the magic of the unknown.</p><br><br>
+          <div class="maximus">
+            <img src="images/maximus.png" class="img-fluid p-4 wow animate__animated animate__fadeInUp" style="max-width: 40vh;" alt="maximus">
+          </div>
+          <span class="maximus wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size: 4vh; color: #7f4b2d">And here comes
+            Maximus</span><br>
+          <span class="text-end wow animate__animated animate__fadeInUp" style="font-family: poppins;">Maximus is the loyal and determined horse of the kingdom’s royal guard. Originally
+            chasing Flynn as part of
+            his duty, Maximus takes his role very seriously and is as brave as he is persistent. Over time, his strict
+            sense of justice softens as he joins Rapunzel and Flynn on their journey. With his strong personality and
+            unexpected humor, Maximus proves to be an unlikely yet valuable companion, always ready to lend his strength
+            and courage when needed.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="svg-curve mb-5 wow animate__animated animate__fadeInUp">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 3.6" preserveAspectRatio="none">
+      <line x1="0" y1="1.8" x2="1200" y2="1.8" stroke="#ecd570" stroke-width="3.6" />
+    </svg>
+  </div>
+
+
+
+  <div class="col-md-8 m-0 mt-0 p-0 mb-0 mx-auto">
+    <div class="card-body text-justify ms-5 p-0 m-0 me-5 mb-0">
+      <h5 class="meet text-center p-0 m-0 wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size:6vh; color: #c489cc;">New Adventures,
+        New Friends, and a Whole Lot of Surprises!</h5>
+      <p class="card-text wow animate__animated animate__fadeInUp">As Rapunzel, Flynn, and Maximus journey through the vast and unfamiliar world outside the
+        tower, they encounter thrilling challenges, hidden dangers, and moments of self-discovery. For Rapunzel, each
+        new sight, sound, and experience is a revelation, her heart filled with awe and wonder. As she steps further
+        into the world she’s only dreamt of, she begins to unlock the full potential of her own strength and
+        intelligence. <br> <br>
+        As Rapunzel explores the world, her bond with Flynn grows stronger. His playful and mischievous side softens as
+        he is inspired by Rapunzel’s kindness and courage. Together, they learn to trust each other and face their
+        challenges side by side, forming a connection that’s more than just about their journey—it’s about friendship,
+        growth, and something special.</p><br><br>
+    </div>
+  </div>
+
+  <div class="container-fluid p-0" style="position: relative; width: 100%; overflow: hidden;">
+    <div class="row">
+      <div class="col wow animate__animated animate__fadeInUp" style="height: 100vh;">
+        <iframe style=" margin-left: 50%; transform: translateX(-50%);" width="4000px" height="100%"
+          src="https://www.youtube.com/embed/5KsVamgPkOE?si=IRVnd5qxP2-KGyoM&autoplay=1&mute=0&controls=1&loop=1"
+          title="Tangled" frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="svg-bad wow animate__animated animate__fadeInUp">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+        opacity=".25" class="shape-fill"></path>
+      <path
+        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+        opacity=".5" class="shape-fill"></path>
+      <path
+        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+        class="shape-fill"></path>
+    </svg>
+  </div>
+
+  <div class="container-fluid mb-3 p-0 m-0;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/believe.jpg" class="img-fluid p-5 wow animate__animated animate__fadeInUp" style="width: 50vh" alt="rapunzel">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body text-justify ms-5 me-5 mt-5">
+          <h5 class="meet wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size: 6vh; color: #900C3F ;">"Mother Knows Best, Darling."
+          </h5>
+          <p class="card-text wow animate__animated animate__fadeInUp">With freedom comes great risk. As they venture further from the tower, Rapunzel’s
+            past comes back to haunt her. Mother Gothel, upset by Rapunzel’s escape, will stop at nothing to bring her
+            back. She manipulates Rapunzel’s fears, warning her about the dangers of the outside world and accusing
+            Flynn of selfish motives. Using her cunning, Mother Gothel sows doubt in Rapunzel’s heart, hoping to make
+            her willingly return to the tower. <br><br>
+            Her words cut deep as she accuses Flynn of selfish motives, claiming he only wants to use Rapunzel for his
+            own gain. “The world isn’t kind, my flower,” Gothel says, her voice dripping with feigned concern. “You’re
+            safer with me.” She leans closer, her tone soft yet calculated, adding, “Mother knows best, darling.”
+            Slowly, she sows seeds of doubt, making Rapunzel question her choices. <br> <br>
+            In a desperate attempt to reclaim Rapunzel, Mother Gothel locks her up again, trying to
+            force her back into captivity. She also causes harm to Flynn in order to separate him from Rapunzel, making
+            her believe that he is not trustworthy. Mother Gothel’s manipulations and deceit intensify as she tries to
+            convince Rapunzel that only she can protect her.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5 mb-3">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body text-justify ms-5 me-5 mt-5">
+          <h5 class="card-title wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size: 6vh; color: #7f4b2d;">"I Can't Let You
+            Do This"
+          </h5><br>
+          <p class="card-text wow animate__animated animate__fadeInUp">Flynn returns to the tower to rescue Rapunzel, but as he climbs her
+            long, magical hair to reach her, Gothel catches him. Furious that he has been a threat to her control over
+            Rapunzel, Gothel stabs Flynn with a knife, seriously wounding him. Flynn, struggling to stay conscious,
+            collapses in Rapunzel’s arms. As he lies there, in pain and desperation, Flynn cries out, "I Can't Let You
+            Do This", unable to bear the thought of Rapunzel sacrificing herself for him. <br> <br>
+
+            Rapunzel is devastated. She knows that the only thing that can heal Flynn is her magical hair,
+            but it is tied to her own well-being, and she’s reluctant to let go of it because of the power it holds.
+            However, in a desperate and selfless act, Rapunzel agrees to give up her hair and its healing powers in
+            exchange for Flynn’s life. <br> <br>
+
+            In a moment of ultimate sacrifice, Rapunzel promises Gothel that she will remain in captivity for the rest
+            of her life if she is allowed to heal Flynn. She chooses to prioritize Flynn’s life over her own freedom,
+            showing the depth of her love for him. She even offers her hair to Gothel, prepared to let go of the magic
+            that has kept her young for years. This selflessness deeply touches Flynn, and it also marks the moment
+            when Rapunzel truly chooses her own path, free of Gothel’s manipulations.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="images/hurt.jpg" class="img-fluid p-5 wow animate__animated animate__fadeInUp" style="width: 50vh; margin: 0; padding: 0;" alt="mother">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mb-3 p-0 m-0;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/cut.jpg" class="img-fluid p-5 wow animate__animated animate__fadeInUp" style="width: 50vh" alt="rapunzel">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body text-justify ms-5 me-5 mt-5">
+          <h5 class="meet wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size: 6vh; color: #ecd570;">Breaking Free
+          </h5>
+          <p class="card-text wow animate__animated animate__fadeInUp">In a final act of defiance and to break Gothel’s hold on Rapunzel once and for all,
+            Flynn grabs a broken piece of mirror and uses it to cut off Rapunzel’s hair. As soon as he does this,
+            Rapunzel’s long, magical golden hair turns back to its natural brown color, and the magic is destroyed. With
+            this, Rapunzel loses the power to heal and maintain eternal youth, but she gains her freedom. <br><br>
+
+            The loss of the magic hair has immediate consequences for Gothel. For years, she has relied on Rapunzel’s
+            hair to keep herself young. As soon as the hair loses its magic, Gothel begins to rapidly age. Her aged body
+            can no longer support her, and as she stumbles, she loses her
+            balance and falls from the tower, ultimately meeting her demise. <br> <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="svg-curve mb-5 wow animate__animated animate__fadeInUp">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 3.6" preserveAspectRatio="none">
+      <line x1="0" y1="1.8" x2="1200" y2="1.8" stroke="#ecd570" stroke-width="3.6" />
+    </svg>
+  </div>
+
+  <div class="container-fluid my-5 p-2 m-0">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/parents.jpg" class="img-fluid rounded-start wow animate__animated animate__fadeInUp" alt="happy">
+        </div>
+
+        <div class="col-md-4 p-3">
+          <div class="card-body">
+            <h5 class="meet text-center p-3 m-0 wow animate__animated animate__fadeInUp" style="font-family: tfont; font-size:6vh; color: #c489cc;">A New
+              Beginning</h5> <br>
+            <p class="card-text p-2 wow animate__animated animate__fadeInUp">After the dramatic events in the tower, Rapunzel is freed from Gothel’s control,
+              and
+              Flynn proves his love for her through bravery and sacrifice. The emotional reunion between Rapunzel and
+              her true parents, the king and queen, is filled with joy as they embrace their long-lost daughter. This
+              moment helps Rapunzel understand her true heritage and her identity as a princess. Meanwhile, Flynn, once
+              a thief, is now recognized for his courage and selflessness in protecting Rapunzel. The king and queen,
+              seeing his goodness, pardon him, marking a turning point where Flynn no longer sees himself as a
+              criminal. <br> <br>
+
+              As Rapunzel and Flynn’s love grows stronger, they overcome obstacles together and form an unbreakable
+              bond. Their journey, from Rapunzel’s longing to explore the world to Flynn’s desire to escape his past,
+              evolves into a beautiful love story. They eventually marry, surrounded by friends and loved ones, marking
+              the beginning of a new chapter in their lives. Their wedding is not only a celebration of their love but
+              also of their shared future, where they can write their own story, free from the past.</p>
+
+            <div class="col-12">
+              <img src="images/pm.jpg" class="img-fluid p-0 m-0 wow animate__animated animate__fadeInUp" style="width: 100vw; " alt="pm">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <img src="images/marriage.jpg" class="img-fluid rounded-end wow animate__animated animate__fadeInUp" alt="Image 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid m-0 p-0">
+    <div class="logo-2 text-center mt-5  ">
+      <img src="images/l2.png" class="logo-2 wow animate__animated animate__fadeInUp" style="width: 40vh;">
+    </div>
+
+    <div class="logo-2 text-center mt-5 ">
+      <img src="images/logo-2.png" class="logo-2 wow animate__animated animate__fadeInUp" style="width: 40vh;">
+    </div>
+
+
+    <div class="svg-curve mb-0 p-0 wow animate__animated animate__fadeInUp">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"
+          transform="scale(1, -1) translate(0, -120)"></path>
+      </svg>
+    </div>
+
+    <div class="pagetop text-end fixed-bottom ">
+      <a href="#" onclick="scrollToTop()">
+          <img src="images/up.png" class="imgpage rounded-start m-3" style="width: 6vh;" alt="pagetop">
+      </a>
+  </div>
+
+    <!-- For the footer -->
+    <footer class="container-fluid text-black text-center p-2 mb-0 m-0 wow animate__animated animate__fadeInUp" style="background-color: #ecd570; margin: 5px;">
+      <p>&copy; 2024 For academic purposes only. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+    <script>
+      new WOW().init(); 
+    </script>
+    <script>
+      new WOW({
+        offset: 200,     
+        mobile: true,  
+        resetAnimation: true 
+        }).init();
+        
+    </script>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+/*Key Art default settings*/
+
+.keyart,
+.keyart_layer {
+	height: 1000px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: no-repeat;
+	width: 100%;
+    position: absolute; 
+    z-index: 10;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.main-content {
+    height: auto;
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+}
+
+#keyart-0 {
+    background-image: url(images/parallax0.png);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+
+#keyart-1 {
+    background-image: url(images/iridessa.png);
+    background-size: 40vh;
+    background-position: 60px -50px;
+}
+
+#keyart-2 {
+    background-image: url(images/silvermist.png);
+    background-size: 32vh;
+    background-position: 1060px -20px;
+}
+
+#keyart-3 {
+    background-image: url(images/vidia.png);
+    background-size: 38vh;
+    background-position: 940px 150px;
+}
+
+#keyart-4 {
+    background-image: url(images/logofairy.png);
+    background-size: 75vh;
+    background-position: 450px 0px;
+}
+
+#keyart-5 {
+    background-image: url(images/rosetta.png);
+    background-size: 36vh;
+    background-position: 280px 100px;
+}
+
+#keyart-6 {
+    background-image: url(images/fawn.png);
+    background-size: 38vh;
+    background-position: 450px 300px;
+}
+
+#keyart-7 {
+    background-image: url(images/tinkerbell.png);
+    background-size: 34vh;
+    background-position: 820px 300px;
+}
+
+
+@media (max-width: 768px) {
+    #keyart-1 {
+        background-size: 22vh; 
+        background-position: -50px 60px;
+    }
+
+    #keyart-2 {
+        background-size: 18vh; 
+        background-position: 270px 90px; 
+    }
+
+    #keyart-3 {
+        background-size: 20vh;
+        background-position: 260px 290px; 
+    }
+
+	#keyart-4 {
+        background-size: 30vh;
+        background-position: 70px 240px;  
+    }
+	
+    #keyart-5 {
+        background-size: 20vh; 
+        background-position: 10px 260px; 
+    }
+
+    #keyart-6 {
+        background-size: 20vh; 
+        background-position: 70px 400px; 
+    }
+
+    #keyart-7 {
+        background-size: 18vh; 
+        background-position: 210px 400px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #keyart-1 {
+        background-size: 25vh;
+        background-position: -70px -50px;
+    }
+
+    #keyart-2 {
+        background-size: 20vh; 
+        background-position: 570px 0px;
+    }
+
+    #keyart-3 {
+        background-size: 20vh; 
+        background-position: 550px 300px; 
+    }
+
+    #keyart-4 {
+        background-size: 38vh;
+        background-position: 200px 200px; 
+    }
+
+    #keyart-5 {
+        background-size: 20vh; 
+        background-position: 110px 250px; 
+    }
+
+    #keyart-6 {
+        background-size: 20vh;
+        background-position: 200px 450px; 
+    }
+
+    #keyart-7 {
+        background-size: 18vh;
+        background-position: 450px 450px;
+    }
+}
