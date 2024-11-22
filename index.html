@@ -102,6 +102,33 @@
 
 <body>
 
+  <!-- For navigation bar -->
+  <nav class="navbar navbar-expand-lg g-0 fixed-top" style="background-color: rgb(255, 224, 229); overflow:hidden;">
+    <div class="container-fluid">
+      <img src="images/torralba_wordmark.png" class="logo" style="width: 10vh;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" style="font-family: poppins;" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="card-name">
     <div class="d-flex align-items-center p-0 mt-0 m-0">
       <img src="images/myID.png" class="id-img mt-0 p-0" alt="ID">
@@ -136,7 +163,7 @@
             <h1 class="card-intro text-white" style="font-family: name-font;">
               <span class="wow animate__animated animate__fadeInUp" style="color: #6B718C; font-family: puimek;">Hello!
                 I am Lira ୨ৎ </span><br>
-              <span class="wow animate__animated animate__fadeInUp" style="color:#9D88BB;">Web Developer and
+              <span class="wow animate__animated animate__fadeInUp" style="color:#9D88BB;">Aspiring Web Developer and
                 Designer</span>
             </h1>
             <p class="card-text ">
@@ -164,8 +191,8 @@
     </a>
   </div>
 
-  <div class="card-about mt-5 " style="background-color: rgba(255, 193, 204, 0.5);">
-    <div class="row p-0">
+  <div class="card-about mt-5 " id="about" style="background-color: rgba(255, 193, 204, 0.5);">
+    <div class="row g-0 p-0">
       <div class="col p-0 ms-4" style="width: 50%">
         <div id="carouselExample" class="carousel slide ms-5 m-0 p-0" style="width: 70%">
           <div class="carousel-inner">
@@ -196,14 +223,16 @@
         </div>
       </div>
       <div class="col-md-8 p-0">
-        <div class="card-body-desc mt-5" style="font-family: poppins;">
-          <h5 class="card-title-desc text-start p-0 wow animate__animated animate__fadeInUp"
-            style="font-family: puimek; font-size: 4vh; color:#6B718C;"><br>About Me</h5>
-          <p class="card-text-desc p-0 text-justify wow animate__animated animate__fadeInUp"><br>
-            Hi! I'm Lira,
-            a third-year college student taking up Bachelor of Science in Information Technology at the Polytechnic
-            University
-            of the Philippines Sto. Tomas Campus (PUP-STC). As a goal-driven person, I approach everything I do with
+        <div class="card-body-desc mt-5 p-0" style="font-family: poppins;">
+          <h5 class="card-title-desc ms-5 text-start p-0 wow animate__animated animate__fadeInUp"
+            style="font-family: puimek; font-size: 4vh; color:#6B718C;">About Me</h5>
+          <p class="card-text-desc ms-5 mt-2 p-0 text-justify wow animate__animated animate__fadeInUp">
+            <span style="font-weight: bold;"> Hi! I'm Lira</span>,
+            a third-year college student taking up <span style="font-weight: bold;">Bachelor of Science in Information
+              Technology</span>
+            at the <span style="font-weight: bold;">Polytechnic University of the Philippines Sto. Tomas Campus
+              (PUP-STC)</span>. <br> <br>
+            As a goal-driven person, I approach everything I do with
             determination and perseverance, striving to excel both in my studies and in extracurricular activities.
             Currently, I am focused on enhancing my skills in web development and design, working to combine creativity
             with technical skills to create engaging digital experiences.
@@ -224,10 +253,10 @@
     </svg>
   </div>
 
-  <div class="container-fluid skills my-5 mb-2">
+  <div class="container-fluid skills p-4 my-5 mb-2" id="skills">
     <div class="row d-flex justify-content-center text-center">
-      <div class="col-12 col-md-6 ps-5 mb-5">
-        <div class="card mb-4"
+      <div class="col-12 col-md-6 ps-4 mb-5 ">
+        <div class="card mb-4 "
           style="background-color: rgb(255, 224, 229); box-shadow: -8px 5px 0px rgb(157, 136, 187);">
           <div class="card-header">
             <h5 class="skills wow animate__animated animate__fadeInUp"
@@ -262,7 +291,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 ps-5 mb-5 mb-md-0">
+      <div class="col-12 col-md-6 ps-3 mb-5 mb-md-0">
         <div class="card mb-4"
           style="background-color: rgb(255, 224, 229); box-shadow: -8px 5px 0px rgb(157, 136, 187);">
           <div class="card-header">
@@ -298,7 +327,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 ps-5 mb-4 ">
+      <div class="col-12 col-md-6 ps-4 mb-4 ">
         <div class="card mb-4"
           style="background-color: rgb(255, 224, 229); box-shadow: -8px 5px 0px rgb(157, 136, 187);">
           <div class="card-header">
@@ -352,7 +381,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 ps-5 mb-4">
+      <div class="col-12 col-md-6 ps-4 mb-4">
         <div class="card mb-4"
           style="background-color: rgb(255, 224, 229); box-shadow: -8px 5px 0px rgb(157, 136, 187);">
           <div class="card-header" style="font-family: puimek; font-size: 3vh; color:#6B718C;">
@@ -422,7 +451,7 @@
     </svg>
   </div>
 
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0" id="projects">
     <div class="card-desc fade-up" style="width: 100%; border-radius: 10px;">
       <div class="row pt-5 mx-0">
         <div class="col-12 ">
@@ -535,7 +564,8 @@
     </div>
   </div>
 
-  <div class="m-0 p-0 d-flex align-items-center text-center " style="background-color: rgb(255, 224, 229); width: 100%; height: 40vh;">
+  <div class="m-0 p-0 d-flex align-items-center text-center "
+    style="background-color: rgb(255, 224, 229); width: 100%; height: 30vh;">
     <img src="images/torralba_wordmark.png" class="wordmark mx-auto" alt="wordmark" style="width: 30vh;">
   </div>
 
