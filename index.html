@@ -197,9 +197,10 @@
       </div>
       <div class="col-md-8 p-0">
         <div class="card-body-desc mt-5 p-0" style="font-family: poppins;">
-          <h5 class="card-title-desc ms-5 text-start p-0 wow animate__animated animate__fadeInUp"
+          <h5 class="card-title-desc ms-3 text-start p-0 wow animate__animated animate__fadeInUp"
             style="font-family: puimek; font-size: 4vh; color:#6B718C;">About Me</h5>
-          <p class="card-text-desc ms-5 mt-2 p-0 text-justify wow animate__animated animate__fadeInUp">
+          <p class="card-text-desc mt-2 ms-3 p-0 text-justify wow animate__animated animate__fadeInUp"
+            style="align-items:center">
             <span style="font-weight: bold;"> Hi! I'm Lira</span>,
             a third-year college student taking up <span style="font-weight: bold;">Bachelor of Science in Information
               Technology</span>
@@ -426,12 +427,12 @@
 
   <div class="container-fluid p-0" id="projects">
     <div class="card-desc fade-up" style="width: 100%; border-radius: 10px;">
-      <div class="row pt-5 mx-0">
+      <div class="row g-0 pt-5 mx-0">
         <div class="col-12 ">
           <div class="card-body text-center ">
             <h1 class="projects">
               <span class="project wow animate__animated animate__fadeInUp"
-                style="color: #6B718C; font-family: puimek;">Projects</span><br>
+                style="color: #6B718C; font-family: puimek;">Website Projects</span><br>
             </h1>
           </div>
         </div>
@@ -439,7 +440,7 @@
     </div>
   </div>
 
-  <div class="row p-3">
+  <div class="row g-0 p-3">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
       <div class="card m-2 p-3">
         <img src="images/camera.png" class="card-img-top wow animate__animated animate__fadeInUp" alt="activity4"
@@ -537,10 +538,337 @@
     </div>
   </div>
 
-  <div class="m-0 p-0 d-flex align-items-center text-center "
+  <div class="container-fluid ms-2">
+    <div class="row g-0 mt-3">
+      <div class="col">
+        <h1 class="projects text-start">
+          <span class="project wow animate__animated animate__fadeInUp" style="color: #6B718C; font-family: puimek;">
+            Other Projects
+          </span>
+          <button type="button" onclick="expandContent()" class="btn text-white wow animate__animated animate__fadeInUp" style="background-color: #9D88BB;"
+            id="btnExpand">
+            See Projects
+          </button>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-0 m-0" id="other" style="display: none;">
+    <h3 class="projects text-start ms-3">
+      <span class="project wow animate__animated animate__fadeInUp" style="color: #6B718C; font-family: puimek;">
+        Java Projects
+      </span>
+    </h3>
+    <div class="row g-0 p-3">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+        <div class="card m-2 p-3">
+          <div id="javaCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video src="images/java3.mp4" class="animation" style="width: 35vh;" controls></video>
+              </div>
+              <div class="carousel-item">
+                <img src="images/animation.png" class="animation" style="width:35vh;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#javaCarousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#javaCarousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body p-2">
+            <h5 class="card-title"><b>Animation</b></h5>
+            <p class="card-text" style="text-align: justify;">This project is about an animated day and night scene
+              where the sun and moon move across the screen, accompanied by floating clouds, a house, trees, and
+              flowers. The animation is achieved using a timer that updates object positions and repaints the panel at
+              regular intervals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+        <div class="card m-2 p-3">
+          <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/java2.png" class="card-img-top" alt="java1">
+              </div>
+              <div class="carousel-item ">
+                <img src="images/java2.1.png" class="card-img-top" alt="java1">
+              </div>
+              <div class="carousel-item ">
+                <img src="images/java2.2.png" class="card-img-top" alt="java1">
+              </div>
+              <div class="carousel-item ">
+                <img src="images/java2.3.png" class="card-img-top" alt="java1">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body p-2">
+            <h5 class="card-title"><b>Emotion Match</b></h5>
+            <p class="card-text" style="text-align: justify;">Emotion Match is a memory-matching game inspired by the
+              animated film Inside Out.
+              Players are presented with a grid of cards, each featuring imagery of emotions. The goal is to flip the
+              cards, find
+              matching pairs of emotions, and clear the board before time runs out.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+        <div class="card m-2 p-3">
+          <img src="images/java1.png" class="card-img-top" alt="java1">
+          <div class="card-body p-2">
+            <h5 class="card-title"><b>Girl with a Pearl Earring</b></h5>
+            <p class="card-text" style="text-align: justify;">
+              This project uses polygons and carefully selected color shades to recreate the famous painting "Girl
+              with a Pearl Earring" by Johannes Vermeer. Each polygon represents a part of the painting, with precise
+              coordinates and color blending to mimic the details of the artwork.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="projects text-start ms-3">
+        <span class="project wow animate__animated animate__fadeInUp" style="color: #6B718C; font-family: puimek;">
+          Python Projects
+        </span>
+      </h3>
+      <div class="row g-0 p-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+          <div class="card m-2 p-3">
+            <div id="pythonCarousel1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <video src="images/alieninvasion.mp4" class="animation" style="width: 30vh;" controls>
+                  </video>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/alien.png" class="animation" style="width: 30vh;">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/alien1.png" class="animation" style="width: 30vh;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#pythonCarousel1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#pythonCarousel1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body p-2">
+              <h5 class="card-title"><b>Alien Invasion</b></h5>
+              <p class="card-text" style="text-align: justify;">Alien Invasion is a space shooter game where players
+                control a spaceship to defeat waves of aliens while avoiding obstacles. The game utilizes Python's
+                Pygame library for interactive gameplay and smooth animations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+          <div class="card m-2 p-3">
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/cave.png" class="card-img-top" alt="java1">
+                </div>
+                <div class="carousel-item ">
+                  <img src="images/cavegame.png" class="card-img-top" alt="java1">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body p-2">
+                <h5 class="card-title"><b>Cave Game</b></h5>
+                <p class="card-text" style="text-align: justify;">In this Cave game, the player control Maria as she
+                  runs through an enchanted forest, dodging whimsical obstacles like moths, snails, and birds. The
+                  objective is to avoid these creatures while maintaining speed, as the game gradually increases in
+                  difficulty with faster obstacles and more frequent challenges.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="projects text-start">
+          <span class="project wow animate__animated animate__fadeInUp" style="color: #6B718C; font-family: puimek;">
+            Multimedia Projects
+          </span>
+        </h3>
+        <div class="row g-0 p-0 m-0">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div class="card m-2 p-3">
+              <div id="Carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/before_hair.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/after_hair.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body p-2">
+                <h5 class="card-title"><b>Hair and Eye Color</b></h5>
+                <p class="card-text" style="text-align: justify;"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div class="card m-2 p-3">
+              <div id="Carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/before snow.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/after_snow.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body p-2">
+                <h5 class="card-title"><b>Snow Effect</b></h5>
+                <p class="card-text" style="text-align: justify;"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div class="card m-2 p-3">
+              <div id="Carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/before_swing.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/after_swing.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body p-2">
+                <h5 class="card-title"><b>Out of Bounds</b></h5>
+                <p class="card-text" style="text-align: justify;"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div class="card m-2 p-3">
+              <div id="Carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/Torralba_front.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Torralba_back.jpg" class="animation" style="width: 30vh;">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pythonCarousel1"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body p-2">
+                <h5 class="card-title"><b>Calling Card</b></h5>
+                <p class="card-text" style="text-align: justify;"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div class="card m-2 p-3">
+              <img src="images/torralba_wordmark.png" style="object-fit: cover;"
+                class="card-img-top wow animate__animated animate__fadeInUp" alt="activity6"
+                style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title wow animate__animated animate__fadeInUp"><b>Wordmark</b></h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div class="card m-2 p-3">
+              <img src="images/torralba_vectorposter.png" style="object-fit: cover;"
+                class="card-img-top wow animate__animated animate__fadeInUp" alt="activity6"
+                style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title wow animate__animated animate__fadeInUp"><b>Vector Poster</b></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer g-0 m-0 p-0 d-flex align-items-center text-center"
     style="background-color: rgb(255, 224, 229); width: 100%; height: 30vh;">
     <img src="images/torralba_wordmark.png" class="wordmark mx-auto" alt="wordmark" style="width: 30vh;">
-  </div>
+  </footer>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -558,6 +886,25 @@
       mobile: true,
       resetAnimation: true
     }).init();
+
+    // Switch between display none and block
+    var display = "none";
+
+    function expandContent() {
+      var other = document.getElementById("other");
+      var btnExpand = document.getElementById("btnExpand");
+
+      if (display == "none") {
+        other.style.display = "block";
+        display = "block";
+        btnExpand.innerHTML = "Collapse";
+      } else {
+        other.style.display = "none";
+        display = "none";
+        btnExpand.innerHTML = "See projects";
+      }
+    }
+
 
   </script>
 
