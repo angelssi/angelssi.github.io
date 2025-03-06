@@ -1,0 +1,148 @@
+ html,
+    body {
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(228, 0, 124);
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: rgb(239, 152, 170);
+    }
+
+    .id-img {
+      width: 20vw;
+      max-width: 100%;
+      height: auto;
+      z-index: 3;
+      animation: bounceInLeft 3s;
+    }
+
+    .name {
+      font-family: name-font;
+      font-size: 12vw;
+      display: flex;
+      color: #E45F9E;
+      align-items: center;
+      text-align: center;
+      text-shadow: -8px 0 #ffffff;
+      white-space: nowrap;
+      z-index: 3;
+      animation: bounceInDown;
+      animation-duration: 3s;
+    }
+
+    @font-face {
+      font-family: name-font;
+      src: url(images/fonts/genty.ttf);
+
+    }
+
+    .h3 {
+      font-family: name-font;
+    }
+
+    @font-face {
+      font-family: puimek;
+      src: url(images/fonts/puimek.ttf);
+    }
+
+    @font-face {
+      font-family: poppins;
+      src: url(images/fonts/poppins.regular.ttf);
+    }
+
+    .divider .shape-fill {
+        fill: #ffc1cc;
+      }
+
+      .carousel-item .row {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .overlay-container {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    
+      .overlay-container:hover .overlay {
+        opacity: 1;
+      }
+    
+      .overlay-text {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    
+      .overlay-button {
+        background-color: #ff4081;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    
+      .overlay-button:hover {
+        background-color: #e50056;
+      }
+
+      @media (max-width: 576px) {
+        .overlay-text {
+          font-size: 12px;
+        }
+  
+        
+        .btn {
+          padding: 5px 10px;
+          font-size: 14px;
+        }
+      }
