@@ -1,6 +1,6 @@
 <?php
 
-$page = "menu";
+$page = "home";
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
     switch ($page) {
@@ -79,7 +79,7 @@ if (isset($_GET['page'])) {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav" style="font-family: font; font-size: 3vh;">
                         <li class="nav-item">
-                            <a class="nav-link" id="menuLink" href="?page=home">Home</a>
+                            <a class="nav-link" id="homeLink" href="?page=home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="menuLink" href="?page=menu">Menu</a>

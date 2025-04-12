@@ -67,21 +67,26 @@ var menuData = [
 ];
 
 var menuContainer = document.getElementById("menuContent");
-var rowContainer = document.createElement("div");
-rowContainer.classList.add("row");
 
-menuContainer.appendChild(rowContainer);
+if (menuContainer) {
+    var rowContainer = document.createElement("div");
+    rowContainer.className = "row";
+    menuContainer.appendChild(rowContainer);
 
-for (var i = 0; i < menuData.length; i++) {
-    rowContainer.innerHTML +=
-        '<div class="col-xl-3 col-lg-4 col-md-6 col-6">' +
-            '<div class="card my-3 shadow-sm mx-auto" style="background-color:#f9f2da; border: 2px solid #c07343;">' +
-                '<img src="images/' + menuData[i].pic + '" class="shadowcard-img-top" alt="' + menuData[i].title + '">' +
-                '<div class="card-body p-1">' +
-                    '<h5 class="card-title p-2 text-center" style="font-size:2.5vh;">' + menuData[i].title + '</h5>' +
-                    '<p class="cart-text text-center text-muted" style="font-size:2vh; font-family:font;">' + menuData[i].price + '</p>' +
-                '</div>' +
-            '</div>' +
-        '</div>';
+    for (var i = 0; i < menuData.length; i++) {
+        var menu = menuData[i];
+
+        rowContainer.innerHTML += `
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <div class="card my-3 shadow-sm mx-auto" style="background-color:#f9f2da; border: 2px solid #c07343;">
+                    <img src="images/${menu.pic}" class="card-img-top" alt="${menu.title}">
+                    <div class="card-body p-1">
+                        <h5 class="card-title p-2 text-center" style="font-size:2.5vh;">${menu.title}</h5>
+                        <p class="card-text text-center text-muted" style="font-size:2vh; font-family:font;">${menu.price}</p>
+                    </div>
+                </div>
+            </div>`;
+    }
 }
+
 </script>
