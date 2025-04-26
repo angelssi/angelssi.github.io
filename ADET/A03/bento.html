@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+
+  @font-face {
+    font-family: "cooper";
+    src: url("css/cooper.otf");
+  }
+
+  @font-face {
+    font-family: "quicksand";
+    src: url("css/quicksand.ttf");
+  }
+
+  .header {
+    background: url('images/bg.PNG') no-repeat center center/cover;
+    height: 100vh;
+  }
+
+
+</style>
+
+<body>
+  <div class="container-fluid p-0 m-0">
+  <!-- For navigation bar -->
+  <nav class="navbar navbar-expand-lg g-0 fixed-top" style="background-color: #DF6207;">
+    <div class="container-fluid d-flex justify-content-between ">
+      <a href="../index.html" class="btn position-absolute m-3 py-2 px-3 rounded-circle" style="background-color:#DF6207;top: 50px; left: 10px; z-index: 1050;">
+        <i class="bi bi-arrow-left"></i>
+    </a>
+      <a class="logo" href="../a03/bento.html">
+        <img src="images/logo.png"style="width:5vh" class="card-img-top p-0 m-0" alt="logo">
+      </a>
+        <div class="d-flex flex-grow-2 ms-2 justify-content-center">
+            <a class="navbar-brand text-center" href="../a03/bento.html" style="font-size: 1.5rem;">Smokin' Burger</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#burger">Burgers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../a03/about.html">About</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#locations">Locations</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+ <!-- For the Main Page section -->
+ <div class="header position-relative text-white g-0 m-0 p-0">
+  <div class="overlay">
+  </div>
+  <div class="header position-relative text-start pt-5 mt-0 mb-n5">
+    <div class="row align-items-center g-0" style="height: 80vh;">
+      <div class="col-md-6">
+        <h1 class="display-2 fw-bold px-4" style="font-family:cooper; color:#64240F">THE BEST BURGER</h1>
+        <p class="lead px-4" style="font-family:quicksand; color: #DF6207">
+          Savor the richness —pure goodness in every bite!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+  <div class="container mb-5" id="burger" style="margin-top: 80px; background-color: #F9E7C3; border-radius: 20px">
+    <div class="row justify-content-center">
+      <div class="d-flex justify-content-center align-items-center mt-5 mb-3">
+        <h1 style="font-family: cooper; font-size: 4vh; color: #DF6207;">
+            SMOKIN' BURGER
+        </h1>
+        <a href="../a03/burgers.html" class="btn ms-3 px-3 py-2" style="font-family:quicksand;font-size: 2vh; background-color:#DF6207">
+            See Burger Menu
+        </a>
+    </div>
+    
+      <!-- Column 1 -->
+      <div class="col">
+        <!-- Row 1 -->
+        <div class="row mb-2">
+          <div class="col c1 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:150px; background-color: #D98F41">
+              <div class="row g-0">
+                <div class="col-6">
+                  <div class="card-body ms-3">
+                    <h5 class="card-title">
+                      <span style="font-family:cooper; font-size:5vh; color:#64240F">100%</span> <br>
+                      <span style="font-family:cooper; font-size:3vh; color:#64240F">fluffiness</span>
+                    </h5>
+                    <p class="card-text" style="font-family:quicksand; font-size:2vh; color:#fff">The golden crown of
+                      the burger</p>
+                  </div>
+                </div>
+                <div class="col-6 p-0 m-0">
+                  <img src="images/bun.png" class="img-fluid img rounded-start p-0 m-0" style="max-width: 80%; height: auto;" alt="Burger Bun">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row mb-2">
+          <div class="col-5 c2 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:200px; background-color: #F09DCD">
+              <div class="card-body">
+                <h5 class="card-title  mt-0" style="font-family:cooper; font-size:2.5vh; color:#fff">ZESTYYY!</h5>
+              </div>
+              <img src="images/onions.png" class="card-img-top img p-0 m-0 mx-auto" style="width: 30vh;">
+            </div>
+          </div>
+
+          <div class="col-7 c3 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:200px; background-color: #9CAA35">
+              <img src="images/lettuce.png" class="card-img-top img p-0 m-0 mx-auto" style="width: 20vh;">
+              <div class="card-body">
+                <h5 class="card-title  mt-0" style="font-family:cooper; font-size:2.5vh; color:#fff">Fresh and crispy
+                  greens...</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row mb-2">
+          <div class="col c4 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:150px; background-color: #D3CA5E">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <img src="images/pickles.png" class="img-fluid img rounded-start m-5" style="width:30vh;">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-family:cooper; font-size:4vh; color:#64240F">Tangy bursts of
+                      flavor</h5>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col">
+        <!-- Row 1 -->
+        <div class="row mb-2">
+          <div class="col-7 c5 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:150px; background-color: #CB4330">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <img src="images/tomato.png" class="p-0 m-0 img-fluid img rounded-start m-5" style="width:25vh;">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title mt-0" style="font-family:cooper; font-size:3vh; color:#fff">Juicy and clean
+                      slices</h5>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 c6 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:150px; background-color: #D98F41">
+              <img src="images/cheese.png" class="card-img-top img p-0 ms-5 mb-0" style="width: 20vh;">
+              <div class="card-body m-0 p-0">
+                <h5 class="card-title text-center p-0" style="font-family:quicksand; font-size:2vh; color:#fff">Melty,
+                  creamy goodness...</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row mb-2">
+          <div class="col c7 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:200px; background-color: #7D3C11">
+              <div class="row g-0">
+                <div class="col-6">
+                  <div class="card-body ms-3">
+                    <h5 class="card-title mt-3">
+                      <span style="font-family:cooper; font-size:5vh; color:#fff">100%</span> <br>
+                      <span style="font-family:cooper; font-size:3vh; color:#fff">satisfaction</span>
+                    </h5>
+                    <p class="card-text mt-0" style="font-family:quicksand; font-size:2vh; color:#fff">Smoky and juicy
+                      indulgence</p>
+                  </div>
+                </div>
+                <div class="col-6 p-0 m-0">
+                  <img src="images/patty.png" class="img-fluid rounded-start img mt-3 ms-0 p-0" style="width: 40vh;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row mb-2">
+          <div class="col-6 c8 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:150px; background-color: #B47433">
+              <div class="row g-0">
+                <div class="col-6">
+                  <div class="card-body ms-2">
+                    <h5 class="card-title mt-4" style="font-family:cooper; font-size:3vh; color:#fff">
+                      Savory delight
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-6 p-0 m-0">
+                  <img src="images/bacon.png" class="img-fluid rounded-start img mt-4 ms-0 p-0" style="width: 20vh;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 c9 d-flex align-items-center justify-content-center">
+            <div class="card" style="width:100%; height:150px; background-color: #D98F41">
+              <div class="row g-0">
+                <div class="col text-center p-0 m-0 mx-auto">
+                  <img src="images/end.png" class="img-fluid rounded-start img mt-1 ms-0 p-0" style="width: 30vh;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container py-5" id="locations">
+    <h1 class="text-center mb-4" style="font-family: cooper; color: #64240F;">Our Store Locations</h1>
+    <div id="locationsContent" class="row"></div>
+  </div>
+
+    <!-- Customer Reviews Section -->
+<section class="customer-reviews py-5" id="reviews">
+  <div class="container-fluid ">
+    <h4 class="text-center display-6 fw-bold" style="color: #fff; font-family: cooper;">What Our Customers Say</h4>
+    <p class="text-center lead" style="font-family: quicksand; color: #DF6207;">Hear it from our happy customers!</p>
+
+    <!-- Reviews Carousel -->
+    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Review 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+              <h5 class="fw-bold" style="font-family: cooper; color: #64240F;">Sponge Bob</h5>
+              <p class="lead" style="font-family: quicksand; color: #000;">"The best burger I’ve ever had! Juicy, flavorful, and cooked to perfection."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+              <h5 class="fw-bold" style="font-family: cooper; color: #64240F;">Patrick Star</h5>
+              <p class="lead" style="font-family: quicksand; color: #000;">"A true masterpiece of a burger. Every bite is pure bliss."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+              <h5 class="fw-bold" style="font-family: cooper; color: #64240F;">Eugene Krabs</h5>
+              <p class="lead" style="font-family: quicksand; color: #000;">"Amazing service and even better food. Smokin’ Burger never disappoints!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+<div class="container-fluid mt-5 my-5" style="width: 100%; background-color: #DF6207;">
+  <div class="row justify-content-center text-center">
+    <!-- Image 1 -->
+    <div class="col-md-4">
+      <img src="images/buzzfeed.png" class="img-fluid" alt="Image 1" style="width: 50%; height: auto;">
+    </div>
+    <!-- Image 2 -->
+    <div class="col-md-4">
+      <img src="images/featr.png" class="img-fluid" alt="Image 2" style="width: 50%; height: auto;">
+    </div>
+    <!-- Image 3 -->
+    <div class="col-md-4">
+      <img src="images/forbes.png" class="img-fluid" alt="Image 3" style="width: 50%; height: auto;">
+    </div>
+  </div>
+</div>
+
+</section>
+
+<footer class="py-4" style="background-color: #64240F; color: #fff;">
+  <div class="container text-center">
+    <p class="mb-4" style="font-family: quicksand; font-size: 2vh;">Connect with us on social media!</p>
+    <div class="d-flex justify-content-center">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com" target="_blank" class="mx-3" style="color: #fff; font-size: 2.5vh;">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <!-- Twitter -->
+      <a href="https://www.twitter.com" target="_blank" class="mx-3" style="color: #fff; font-size: 2.5vh;">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com" target="_blank" class="mx-3" style="color: #fff; font-size: 2.5vh;">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+    <p class="mt-3" style="font-family: quicksand; font-size: 1.5vh;">&copy; 2025 Smokin' Burger. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</div>
+
+
+<script>
+  var storeLocationsData = [
+      {
+        city: "Manila",
+        address: "123 Mabini Street, Ermita, Manila, Philippines",
+        contact: "+63 912 345 6789",
+        pic: "logo2.png"
+      },
+      {
+        city: "Quezon City",
+        address: "45 Katipunan Avenue, Quezon City, Philippines",
+        contact: "+63 923 456 7890",
+        pic: "logo2.png"
+      },
+      {
+        city: "Makati",
+        address: "678 Ayala Avenue, Makati City, Philippines",
+        contact: "+63 934 567 8901",
+        pic: "logo2.png"
+      },
+      {
+        city: "Cebu City",
+        address: "56 Osmena Boulevard, Cebu City, Philippines",
+        contact: "+63 945 678 9012",
+        pic: "logo2.png"
+      },
+      {
+        city: "Davao City",
+        address: "89 Roxas Avenue, Davao City, Philippines",
+        contact: "+63 956 789 0123",
+        pic: "logo2.png"
+      }
+    ];
+
+    var locationsContainer = document.getElementById("locationsContent");
+
+    if (locationsContainer) {
+      for (var i = 0; i < storeLocationsData.length; i++) {
+        var store = storeLocationsData[i];
+
+        locationsContainer.innerHTML += `
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card-location store-card shadow h-100">
+              <img src="images/${store.pic}"style="width:5vh" class="card-img-top text-center mx-auto" alt="${store.city}">
+              <div class="card-body-location text-center">
+                <h5 class="card-title-location" style="font-family: cooper; color: #DF6207;">${store.city}</h5>
+                <p class="card-text-location">${store.address}</p>
+                <p class="card-text-location"><strong>Contact:</strong> ${store.contact}</p>
+              </div>
+            </div>
+          </div>`;
+      }
+    }
+    
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

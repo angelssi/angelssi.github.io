@@ -1,0 +1,190 @@
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+    .row {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: space-around; 
+        align-items: center; 
+        
+      }
+    
+      .col {
+        min-width: 100%;
+        flex: 0 0 100% !important; /* Set width for two cards per row */
+        max-width: 100% !important;
+        margin-bottom: 10px; /* Add spacing between rows */
+      }
+    
+      .card {
+        width: 100%;
+        height: 100px !important;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9 {
+        margin-bottom: 10px; /* Add spacing between cards */
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .card-body {
+        display: none;
+      }
+    
+      .img {
+        width: 20vh !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+    
+      /* Specific Classes with Images */
+      .c1 img {
+        width: 40vh !important;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .c2 img {
+        width: 20vh !important;
+      }
+    
+      .c3 img {
+        padding: 10px !important;
+      }
+    
+      .c4 img {
+        width: 20vh !important;
+      }
+    
+      .c5 img {
+        width: 20vh !important;
+      }
+    
+      .c7 img {
+        width: 60vh !important;
+      }
+    
+      .c8 img {
+        width: 60vh !important;
+      }
+    }
+    
+
+/* Media Queries for Screen Sizes */
+@media screen and (max-width: 768px) {
+    .row {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      justify-content: space-around; 
+      align-items: center; 
+      
+    }
+  
+    .col {
+      min-width: 100%;
+      flex: 0 0 100% !important; /* Set width for two cards per row */
+      max-width: 100% !important;
+      margin-bottom: 10px; /* Add spacing between rows */
+    }
+  
+    .card {
+      width: 100%;
+      height: 100px !important;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9 {
+      margin-bottom: 10px; /* Add spacing between cards */
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card-body {
+      display: none;
+    }
+  
+    .img {
+      width: 20vh !important;
+      justify-content: center;
+      align-items: center;
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+  
+    /* Specific Classes with Images */
+    .c1 img {
+      width: 40vh !important;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .c2 img {
+      width: 20vh !important;
+    }
+  
+    .c3 img {
+      padding: 10px !important;
+    }
+  
+    .c4 img {
+      width: 20vh !important;
+    }
+  
+    .c5 img {
+      width: 20vh !important;
+    }
+  
+    .c7 img {
+      width: 60vh !important;
+    }
+  
+    .c8 img {
+      width: 60vh !important;
+    }
+  }
+  
+  a {
+    font-family: "quicksand";
+    font-weight: bold;
+    color: #fff !important;
+  }
+
+  .customer-reviews {
+    background-color: #DF6207;
+  }
+  
+  .card {
+    overflow: hidden; 
+  }
+  
+  .store-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .store-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-location {
+    background: #fff; 
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #C2C2C2, 
+                -5px -5px 10px #FFFFFF; 
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-location:hover {
+    box-shadow: inset 5px 5px 10px #C2C2C2,
+                inset -5px -5px 10px #FFFFFF; 
+}
+
+.card-body-location {
+    text-align: center;
+}
