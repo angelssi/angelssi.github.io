@@ -26,13 +26,13 @@
 }
 
 .x1 {
-  -webkit-animation: animateCloud 15s linear infinite;
+  -webkit-animation: animateCloud 5s linear infinite;
   -webkit-transform: scale(0.65);
   top: -220px;
 }
 
 .x2 {
-  -webkit-animation: animateCloud 20s linear infinite;
+  -webkit-animation: animateCloud 12s linear infinite;
   -webkit-transform: scale(0.45);
   top: -50px;
 }
@@ -50,7 +50,7 @@
 }
 
 .x5 {
-  -webkit-animation: animateCloud 12s linear infinite;
+  -webkit-animation: animateCloud 15s linear infinite;
   -webkit-transform: scale(0.25);
   top: 60px;
 }
