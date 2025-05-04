@@ -1,0 +1,157 @@
+
+.receipt {
+    font-family: quicksand;
+  }
+
+  .custom-button {
+    width: 90%;
+    margin: 10px !important;
+    font-size: 3dvh;
+    font-family: quicksand;
+    border-radius: 10px;
+  }
+
+  .custom-button.content {
+    width: 100%;
+  }
+
+  .custom-button:hover {
+    background-color: #13bfd7;
+    cursor: pointer;
+  }
+
+  .custom-button:active {
+    background-color: #13bfd7;
+  }
+
+  .active-btn {
+    background-color: #13bfd7 !important;
+  }
+
+  .custom-product {
+    width: 90%;
+    margin: 10px !important;
+    font-size: 3dvh;
+    font-family: quicksand;
+    border-radius: 10px;
+  }
+
+  .custom-product.content {
+    width: 100%;
+  }
+
+  .custom-product:hover {
+    background-color: #13bfd7;
+    cursor: pointer;
+  }
+
+  .proceed:hover {
+    background-color: #DA9338 !important;
+    cursor: pointer;
+  }
+
+  .btn-thankyou:hover {
+    background-color: #DA9338 !important;
+    cursor: pointer;
+    border: none !important;
+    outline: none !important;
+  }
+
+
+  .sidecontainer {
+    height: 90dvh;
+    background-color: #f0f1ec;
+    display: block !important;
+  }
+
+  .categories {
+    width: fit-content;
+  }
+
+  .maincontainer {
+    height: 90dvh;
+    background-color: #f0f1ec;
+  }
+
+
+  .title {
+    font-family: bella;
+    color: #13bfd7;
+  }
+
+  body {
+    background-color: #f0f1ec;
+  }
+
+  .main-row {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .col-3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-family: bella;
+    color: #13bfd7;
+  }
+
+  .card {
+    border: none;
+  }
+
+  .overflow-scroll {
+    scrollbar-color: #fff #f0f1ec;
+  }
+
+  .price-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+  }
+
+  .circle-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle-btn:hover {
+    background-color: #bbb;
+  }
+
+  .quantity-selector input {
+    width: 30px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+  }
+
+  .card-img {
+    border-radius: 10px;
+  }
+
+  .total {
+    width: 100% !important;
+  }
