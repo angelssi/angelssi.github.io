@@ -108,23 +108,21 @@ var products = productList.map(function(category) {
 });
 
 // Load categories content
-function loadCategories(){
+function loadCategories() {
     var categoriesContainers = document.querySelectorAll(".categories"); 
     categoriesContainers.forEach(container => {
         container.innerHTML = ""; 
         products.forEach((product, index) => {
-            var isActive = index === 0 ? "active-btn" : "";
-            container.innerHTML += `
-                <div onclick="loadProducts('${index}'); setActive(this)" class="card mx-1 custom-button p-3 text-center ${isActive}">
-                    <small>${product.category}</small>
-                </div>
-            `;
+            var isActive = index === 0 ? "" : "";
+            container.innerHTML += 
+                '<div onclick="loadProducts(\'' + index + '\'); setActive(this)" class="card mx-1 custom-button p-3 text-center ' + isActive + '">' +
+                    '<small>' + product.category + '</small>' +
+                '</div>';
         });
     });
-    
-    loadProducts(0); 
 
 }
+
 
 // For active button
 function setActive(element) {
@@ -136,7 +134,6 @@ function setActive(element) {
     element.classList.add("active-btn"); 
 }
 
-
 // To load products in each card
 function loadProducts(categoryIndex) {
     var maincontainer = document.getElementById("maincontainer");
@@ -146,28 +143,28 @@ function loadProducts(categoryIndex) {
         products[categoryIndex].contents.forEach(function(item) {
             var savedQuantity = productQuantities[item.code] || 1;
 
-            maincontainer.innerHTML += `
-                <div class="col-md-4 col-sm-6"> 
-                    <div class="card mx-1 custom-product p-3 m-3 text-center" style="overflow:hidden; margin:10px; height: 350px;"
-                         onclick="addToReceipt('${item.price}', '${item.code}')">
-                        <img src="images/${item.image}" class="card-img mx-auto" style="width: 200px">
-                        <div class="card-body">
-                            <h5 class="card-title">${item.name}</h5>
-                            <div class="price-quantity">
-                                <p class="card-text">₱${item.price}</p>
-                                <div class="quantity-selector">
-                                    <button onclick="changeQuantity(-1, '${item.code}')" class="circle-btn">−</button>
-                                    <input type="number" id="quantity-${item.code}" name="quantity" value="${savedQuantity}" min="1" max="10" readonly>
-                                    <button onclick="changeQuantity(1, '${item.code}')" class="circle-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
+            maincontainer.innerHTML += 
+                '<div class="col-md-4 col-sm-6">' + 
+                    '<div class="card mx-1 custom-product p-3 m-3 text-center" style="overflow:hidden; margin:10px; height: 350px;"' +
+                         ' onclick="addToReceipt(\'' + item.price + '\', \'' + item.code + '\')">' +
+                        '<img src="images/' + item.image + '" class="card-img mx-auto" style="width: 200px">' +
+                        '<div class="card-body">' +
+                            '<h5 class="card-title">' + item.name + '</h5>' +
+                            '<div class="price-quantity">' +
+                                '<p class="card-text">₱' + item.price + '</p>' +
+                                '<div class="quantity-selector">' +
+                                    '<button onclick="changeQuantity(-1, \'' + item.code + '\')" class="circle-btn">−</button>' +
+                                    '<input type="number" id="quantity-' + item.code + '" name="quantity" value="' + savedQuantity + '" min="1" max="10" readonly>' +
+                                    '<button onclick="changeQuantity(1, \'' + item.code + '\')" class="circle-btn">+</button>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>';
         });
     }
 }
+
 
 // Function to add product to receipt
 function addToReceipt(price, code) {
@@ -175,10 +172,10 @@ function addToReceipt(price, code) {
     var totalValueElement = document.getElementById("totalValue");
     var totalItemsValueElement = document.getElementById("totalItemsValue");
 
-    var quantityInput = document.getElementById(`quantity-${code}`);
+    var quantityInput = document.getElementById("quantity-" + code);
     var newQuantity = parseInt(quantityInput.value);
 
-    var existingItem = document.getElementById(`receipt-item-${code}`);
+    var existingItem = document.getElementById("receipt-item-" + code);
 
     // Check if item already exists in the receipt
     if (existingItem) {
@@ -196,15 +193,14 @@ function addToReceipt(price, code) {
         total += quantityDifference * parseFloat(price);
     } else if (newQuantity > 0) {
         // Add item if it is not in the receipt
-        receiptItemsContainer.innerHTML += `
-            <div id="receipt-item-${code}" class="d-flex flex-row justify-content-between">
-                <div><small>${code}</small></div>
-                <div><small>x<span class="receipt-quantity">${newQuantity}</span></small></div>
-                <div><small class="receipt-price">${parseFloat(price)}</small></div>
-                <div><small class="receipt-extended">${(price * newQuantity)}</small></div>
-            </div>
-        `;
-
+        receiptItemsContainer.innerHTML += 
+            '<div id="receipt-item-' + code + '" class="d-flex flex-row justify-content-between">' +
+                '<div><small>' + code + '</small></div>' +
+                '<div><small>x<span class="receipt-quantity">' + newQuantity + '</span></small></div>' +
+                '<div><small class="receipt-price">' + parseFloat(price) + '</small></div>' +
+                '<div><small class="receipt-extended">' + (price * newQuantity) + '</small></div>' +
+            '</div>';
+        
         total += newQuantity * parseFloat(price);
     }
 
@@ -215,13 +211,14 @@ function addToReceipt(price, code) {
     totalItems.forEach(function(item) {
         itemCount += parseInt(item.innerText);
     });
-    totalItemsValue.innerHTML = itemCount;
+    totalItemsValueElement.innerHTML = itemCount;
 }
+
 
 
 // For the quantity of the product
 function changeQuantity(amount, code) {
-    var quantityInput = document.getElementById(`quantity-${code}`);
+    var quantityInput = document.getElementById("quantity-" + code);
     var currentQuantity = parseInt(quantityInput.value);
     var newQuantity = currentQuantity + amount;
 
@@ -230,5 +227,6 @@ function changeQuantity(amount, code) {
         productQuantities[code] = newQuantity;
     }
 }
+
 
 loadCategories();
