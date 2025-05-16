@@ -3,6 +3,10 @@
   }
   
   @media screen and (min-width: 344px) and (max-width: 1027px)  {
+
+    .container-fluid {
+      overflow: scroll !important;
+    }
       
     .mobile {
       display: block !important; 
