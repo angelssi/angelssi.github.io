@@ -2,7 +2,7 @@ var categories = [];
 var products = [];
 
 const getAllCategories = async () => {
-    fetch('http://localhost/angelssi.github.io/ADET/A05/A05_BE/categories.php')
+    fetch('http://localhost/angelssi.github.io/ADET/A06/A06_BE/categories.php')
         .then(response => response.json())
         .then(data => {
             categories = data;
@@ -15,7 +15,7 @@ const getAllProducts = async (categoryID) => {
         categoryID: categoryID
     };
 
-    fetch('http://localhost/angelssi.github.io/ADET/A05/A05_BE/products.php', {
+    fetch('http://localhost/angelssi.github.io/ADET/A06/A06_BE/products.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
