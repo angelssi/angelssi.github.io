@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&family=Montserrat:wght@400;600&family=Dela+Gothic+One&display=swap');
+
+:root {
+  --mainFont: 'Montserrat', sans-serif;
+  --headingFont: 'Teko', sans-serif;
+  --subheadingFont: 'Roboto Mono', monospace;
+  --specialFont: 'Dela Gothic One', sans-serif;
+  --primaryColor: #ad4b02;
+  --bgColor: #f2f2f2;
+  --text-color-light: #fffbfb;
+  --text-color-dark: #0a0d14;
+}
+
+body {
+  font-family: var(--mainFont);
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bgColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color-dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-dark);
+}
+
+.nav-item .nav-link {
+  font-family: var(--headingFont);
+  font-size: clamp(1rem, 1.5rem, 2.5rem);
+  font-weight: bolder;
+  color: var(--text-color-light) !important;
+}
+
+.heading {
+  font-family: var(--headingFont);
+  font-size: clamp(1rem, 2.6rem, 3.2rem);
+  font-weight: bolder;
+  color: var(--text-color-dark);
+}
+
+.subheading {
+  font-family: var(--mainFont);
+  font-size: clamp(1rem, 1.4rem, 1.8rem);
+  font-weight: bolder;
+}
+nav .nav-link:hover {
+    color: #e7141a !important;
+}
+
+
+
+
+

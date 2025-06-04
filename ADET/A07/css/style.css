@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&family=Montserrat:wght@400;600&family=Dela+Gothic+One&display=swap');
+
+
+:root {
+  --mainFont: 'Montserrat', sans-serif;
+  --headingFont: 'Teko', sans-serif;
+  --subheadingFont: 'Roboto Mono', monospace;
+  --specialFont: 'Dela Gothic One', sans-serif;
+  --primaryColor: #ad4b02;
+  --bgColor: #f2f2f2;
+  --text-color-light: #fffbfb;
+  --text-color-dark: #0a0d14;
+}
+
+body {
+  font-family: var(--mainFont);
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bgColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color-dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-dark);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.nav-item .nav-link {
+  font-family: var(--headingFont);
+  font-size: clamp(1rem, 1.5rem, 2.5rem);
+  font-weight: bolder;
+  color: var(--text-color-light) !important;
+}
+
+.heading {
+  font-family: var(--headingFont);
+  font-size: clamp(1rem, 2.6rem, 3.2rem);
+  font-weight: bolder;
+  color: var(--text-color-dark);
+}
+
+.subheading {
+  font-family: var(--mainFont);
+  font-size: clamp(1rem, 1.4rem, 1.8rem);
+  font-weight: bolder;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: transparent;
+  font-family: var(--specialFont);
+  -webkit-text-stroke: 1px white;
+  opacity: 0;
+  animation: slideInLeft 3s forwards;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: var(--specialFont);
+  font-size: 10rem;
+  color: var(--text-color-light);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: slideInLeft 3s forwards;
+}
+
+.heading-cuisine {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-family: var(--specialFont);
+  font-size: 4rem;
+  color: var(--text-color-light);
+  opacity: 0;
+  animation: slideInLeft 3s forwards;
+}
+
+.heading-destination {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: var(--specialFont);
+  font-size: 4rem;
+  color: var(--text-color-light);
+  opacity: 0;
+  animation: slideInLeft 3s forwards;
+}
+
+@media (max-width: 600px) {
+  .headline {
+    font-size: 3rem !important;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+  }
+
+  .heading-destination {
+    font-size: 3rem;
+  }
+
+  .heading-cuisine {
+    font-size: 3rem;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-10%) translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.custom-line {
+  border: none;
+  width: 80%;
+  height: 2px;
+  background-color: #000;
+  margin: 20px auto;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+#panorama {
+  width: 80%;
+  height: 400px;
+  background-color: var(--text-color-dark);
+  border-radius: 8px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    transition: 0.3s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+table td:hover {
+    background-color: #e2e2e2; 
+    transition: 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+    color: #e7141a !important;
+}
+
+.link:hover {
+    color: #e7141a !important;
+}
+
+
+

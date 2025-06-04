@@ -66,6 +66,4 @@
         <img src="images/hotline.png" class="sidebar-logo mx-auto" style="width: 40vh;">
         </div>
     </div>
-
-
 </div>
